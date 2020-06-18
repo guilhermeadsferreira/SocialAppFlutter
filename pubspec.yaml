@@ -1,0 +1,52 @@
+name: flutter_gofast
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+#flutter packages pub run build_runner build --delete-conflicting-outputs
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Localização e idioma
+  flutter_localizations:
+    sdk: flutter
+  # Rotas, Injeção de Dependencia
+  flutter_modular: ^1.1.2
+  # Gerencia de Estado
+  mobx: ^1.1.1
+  flutter_mobx: ^1.1.0
+  # Local Storage
+  shared_preferences: ^0.5.6+3
+  # Firebase
+  cloud_firestore: ^0.13.5
+  firebase_auth: ^0.16.0
+  google_sign_in: ^4.4.4
+  # Icones Cupertino
+  cupertino_icons: ^0.1.2
+  #Pacote de icones https://feathericons.com/
+  flutter_icons: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mobx_codegen: ^1.0.3
+  build_runner:
+  effective_dart: ^1.2.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lang/
+    - assets/images/
+
+  fonts:
+      - family: Google
+        fonts:
+          - asset: assets/fonts/ProductSans-Regular.ttf
+          - asset: assets/fonts/ProductSans-Bold.ttf
+            weight: 700 
